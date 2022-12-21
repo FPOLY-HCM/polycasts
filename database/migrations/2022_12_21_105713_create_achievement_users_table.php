@@ -1,6 +1,7 @@
 <?php
 
-use App\Models\Series;
+use App\Models\Achievement;
+use App\Models\User;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -12,10 +13,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('chapters', function (Blueprint $table) {
+        Schema::create('achievement_users', function (Blueprint $table) {
             $table->id();
-            $table->foreignIdFor(Series::class)->constrained();
-            $table->string('heading');
+            $table->foreignIdFor(Achievement::class)->constrained();
+            $table->foreignIdFor(User::class)->constrained();
             $table->timestamps();
         });
     }
@@ -25,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('chapters');
+        Schema::dropIfExists('achievement_users');
     }
 };

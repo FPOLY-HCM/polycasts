@@ -49,6 +49,11 @@ class User extends Authenticatable
         return $this->hasOne(Profile::class);
     }
 
+    public function achievements(): HasMany
+    {
+        return $this->hasMany(AchievementUser::class);
+    }
+
     public function series(): HasMany
     {
         return $this->hasMany(Series::class);
