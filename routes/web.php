@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\DiscussController;
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,4 +15,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', fn () => \Inertia\Inertia::render('Home'));
+Route::get('/', HomeController::class)->name('home');
+
+Route::prefix('discuss')->name('discuss.')->controller(DiscussController::class)->group(function () {
+    Route::get('/', 'index')->name('index');
+    Route::get('channel', 'channel')->name('channel');
+    Route::get('channel/{channel:slug}/{conversation:slug}', 'show')->name('show');
+});

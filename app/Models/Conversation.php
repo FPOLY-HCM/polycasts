@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Conversation extends Model
 {
@@ -23,6 +24,16 @@ class Conversation extends Model
     public function user(): BelongsTo
     {
         return $this->belongsTo(User::class);
+    }
+
+    public function replies(): HasMany
+    {
+        return $this->hasMany(Reply::class);
+    }
+
+    public function lastReply(): BelongsTo
+    {
+        return $this->belongsTo(Reply::class, 'last_reply_id');
     }
 
     public function channel(): BelongsTo

@@ -16,7 +16,10 @@
         "vite": "^4.0.0"
     },
     "dependencies": {
+        "@heroicons/vue": "^2.0.13",
         "@inertiajs/vue3": "^1.0.0-beta.1",
-        "vue": "^3.2.45"
+        "moment": "^2.29.4",
+        "vue": "^3.2.45",
+        "ziggy-js": "^1.5.0"
     }
 }

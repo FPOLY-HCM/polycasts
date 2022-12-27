@@ -19,7 +19,7 @@ class DatabaseSeeder extends Seeder
             AchievementSeeder::class,
             ChannelSeeder::class,
             ConversationSeeder::class,
-            PostSeeder::class,
+            ReplySeeder::class,
             TopicSeeder::class,
             SeriesSeeder::class,
             ChapterSeeder::class,
