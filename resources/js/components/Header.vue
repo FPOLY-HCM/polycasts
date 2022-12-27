@@ -13,8 +13,8 @@ const menu = [
 
 <template>
     <header>
-        <nav class="h-14 py-3 px-10">
-            <div class="h-full flex items-center justify-between">
+        <nav class="px-10 py-3 h-14">
+            <div class="flex items-center justify-between h-full">
                 <div>
                     <Link>
                         <img src="https://laracasts.com/images/logo/logo-white.svg" width="145">

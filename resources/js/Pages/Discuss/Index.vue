@@ -1,11 +1,3 @@
-<script setup>
-import ConversationItem from '@/components/ConversationItem.vue'
-
-defineProps({
-    conversations: Array,
-})
-</script>
-
 <template>
     <div class="flex">
         <div class="w-52">

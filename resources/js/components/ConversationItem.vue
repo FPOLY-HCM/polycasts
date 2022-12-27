@@ -16,15 +16,15 @@ defineProps({
                 class="rounded-xl w-14 h-14"
             />
         </div>
-        <div class="w-full flex flex-col justify-between">
+        <div class="flex flex-col justify-between w-full">
             <div class="flex justify-between">
                 <h4 class="text-lg font-semibold truncate hover:underline">{{ conversation.title }}</h4>
                 <div class="flex">
-                    <div class="mr-4 flex text-grey-700">
+                    <div class="flex mr-4 text-grey-700">
                         <EyeIcon class="w-4 h-4" />
                         <span class="ml-1.5 text-xs font-medium">{{ conversation.views }}</span>
                     </div>
-                    <div class="mr-4 flex text-grey-700">
+                    <div class="flex mr-4 text-grey-700">
                         <EyeIcon class="w-4 h-4" />
                         <span class="ml-1.5 text-xs font-medium">{{ conversation.replies_count }}</span>
                     </div>

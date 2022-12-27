@@ -4,7 +4,7 @@ import Header from './Header.vue'
 
 <template>
     <Header />
-    <main class="font-poppins px-10 pt-8">
+    <main class="px-10 pt-8 font-poppins">
         <slot />
     </main>
 </template>
