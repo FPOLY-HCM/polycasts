@@ -2,12 +2,13 @@
 import { Link , usePage } from '@inertiajs/vue3'
 import { MagnifyingGlassIcon } from '@heroicons/vue/24/outline'
 import route from 'ziggy-js/src/js'
+import { trans } from 'laravel-vue-i18n'
 
 const menu = [
-    { name: 'Home', url: '/', active: true },
-    { name: 'Topics', url: '/', active: false },
-    { name: 'Series', url: '/', active: false },
-    { name: 'Forum', url: route('discuss.index'), active: false },
+    { name: trans('Home'), url: '/', active: true },
+    { name: trans('Topics'), url: '/', active: false },
+    { name: trans('Series'), url: '/', active: false },
+    { name: trans('Forum'), url: route('discuss.index'), active: false },
 ]
 </script>
 
@@ -16,7 +17,7 @@ const menu = [
         <nav class="px-10 py-3 h-14">
             <div class="flex items-center justify-between h-full">
                 <div>
-                    <Link>
+                    <Link :href="route('home')">
                         <img src="https://laracasts.com/images/logo/logo-white.svg" width="145">
                     </Link>
                 </div>
