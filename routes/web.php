@@ -20,5 +20,5 @@ Route::get('/', HomeController::class)->name('home');
 Route::prefix('discuss')->name('discuss.')->controller(DiscussController::class)->group(function () {
     Route::get('/', 'index')->name('index');
     Route::get('channel', 'channel')->name('channel');
-    Route::get('channel/{channel:slug}/{conversation:slug}', 'show')->name('show');
+    Route::get('channel/{channel:slug}/{discussion:slug}', 'show')->name('show');
 });

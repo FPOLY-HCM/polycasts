@@ -3,19 +3,16 @@
 namespace Database\Seeders;
 
 use App\Models\Channel;
-use App\Models\Conversation;
+use App\Models\Discussion;
 use App\Models\User;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Str;
 
-class ConversationSeeder extends Seeder
+class DiscussionSeeder extends Seeder
 {
-    /**
-     * Run the database seeds.
-     */
     public function run(): void
     {
-        Conversation::truncate();
+        Discussion::truncate();
 
         $titles = [
             'FormRequest and upload file issue',
@@ -72,7 +69,7 @@ class ConversationSeeder extends Seeder
         $channelsCount = Channel::count();
 
         foreach ($titles as $title) {
-            Conversation::create([
+            Discussion::create([
                 'title' => $title,
                 'slug' => Str::slug($title),
                 'user_id' => rand(1, $usersCount),

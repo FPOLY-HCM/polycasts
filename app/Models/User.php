@@ -44,13 +44,13 @@ class User extends Authenticatable
         return $this->hasMany(Series::class);
     }
 
-    public function conversations(): HasMany
+    public function discussions(): HasMany
     {
-        return $this->hasMany(Conversation::class);
+        return $this->hasMany(Discussion::class);
     }
 
     public function replies(): HasMany
     {
-        return $this->hasMany(Reply::class);
+        return $this->hasMany(Post::class);
     }
 }

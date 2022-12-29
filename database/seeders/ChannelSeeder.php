@@ -8,9 +8,6 @@ use Illuminate\Support\Str;
 
 class ChannelSeeder extends Seeder
 {
-    /**
-     * Run the database seeds.
-     */
     public function run(): void
     {
         Channel::truncate();

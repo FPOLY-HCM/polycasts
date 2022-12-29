@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 
-class Conversation extends Model
+class Discussion extends Model
 {
     protected $fillable = [
         'user_id',
@@ -28,12 +28,12 @@ class Conversation extends Model
 
     public function replies(): HasMany
     {
-        return $this->hasMany(Reply::class);
+        return $this->hasMany(Post::class);
     }
 
     public function lastReply(): BelongsTo
     {
-        return $this->belongsTo(Reply::class, 'last_reply_id');
+        return $this->belongsTo(Post::class, 'last_post_id');
     }
 
     public function channel(): BelongsTo

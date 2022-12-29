@@ -2,17 +2,17 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Conversation;
+use App\Models\Discussion;
 use Inertia\Inertia;
 
 class HomeController extends Controller
 {
     public function __invoke()
     {
-        $conversations = Conversation::query()
+        $discussions = Discussion::query()
             ->with(['user', 'channel'])
             ->get();
 
-        return Inertia::render('Home', compact('conversations'));
+        return Inertia::render('Home', compact('discussions'));
     }
 }

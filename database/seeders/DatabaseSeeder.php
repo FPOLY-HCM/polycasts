@@ -7,9 +7,6 @@ use Illuminate\Support\Facades\Schema;
 
 class DatabaseSeeder extends Seeder
 {
-    /**
-     * Seed the application's database.
-     */
     public function run(): void
     {
         Schema::disableForeignKeyConstraints();
@@ -18,8 +15,8 @@ class DatabaseSeeder extends Seeder
             UserSeeder::class,
             AchievementSeeder::class,
             ChannelSeeder::class,
-            ConversationSeeder::class,
-            ReplySeeder::class,
+            DiscussionSeeder::class,
+            PostSeeder::class,
             TopicSeeder::class,
             SeriesSeeder::class,
             ChapterSeeder::class,

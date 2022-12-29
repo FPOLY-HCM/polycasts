@@ -14,8 +14,8 @@ class Channel extends Model
         'color',
     ];
 
-    public function conversations(): HasMany
+    public function discussions(): HasMany
     {
-        return $this->hasMany(Conversation::class);
+        return $this->hasMany(Discussion::class);
     }
 }

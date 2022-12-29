@@ -1,6 +1,6 @@
 <?php
 
-use App\Models\Conversation;
+use App\Models\Channel;
 use App\Models\User;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
@@ -13,12 +13,14 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('replies', function (Blueprint $table) {
+        Schema::create('discussions', function (Blueprint $table) {
             $table->id();
             $table->foreignIdFor(User::class)->constrained();
-            $table->foreignIdFor(Conversation::class)->constrained();
+            $table->foreignIdFor(Channel::class)->constrained();
+            $table->string('title');
+            $table->string('slug')->unique();
             $table->longText('body');
-            $table->boolean('best_answer')->default(false);
+            $table->integer('views')->default(0);
             $table->timestamps();
         });
     }
@@ -28,6 +30,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('replies');
+        Schema::dropIfExists('discussions');
     }
 };

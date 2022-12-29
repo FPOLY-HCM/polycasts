@@ -9,14 +9,6 @@ module.exports = {
     ],
     theme: {
         extend: {
-            fontFamily: {
-                "poppins": ["Poppins", "sans-serif"],
-            },
-            colors: {
-                grey: {
-                    600: "#BAD9FC"
-                },
-            },
             backgroundSize: {
                 'auto': 'auto',
                 'cover': 'cover',
