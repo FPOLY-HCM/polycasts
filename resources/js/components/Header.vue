@@ -1,6 +1,6 @@
 <script setup>
-import { Link , usePage } from '@inertiajs/vue3'
-import { MagnifyingGlassIcon } from '@heroicons/vue/24/outline'
+import { Link } from '@inertiajs/vue3'
+import { MagnifyingGlassIcon, Bars3Icon } from '@heroicons/vue/24/outline'
 import route from 'ziggy-js/src/js'
 import { trans } from 'laravel-vue-i18n'
 
@@ -28,12 +28,18 @@ const menu = [
                         :href="item.url"
                         v-text="item.name"
                         class="relative uppercase font-medium px-5 text-base hover:text-white after:absolute after:opacity-0 after:content-[''] after:-bottom-3 after:h-1 after:w-[60%] after:left-[20%] after:bg-blue-500 after:rounded-lg hover:after:opacity-100 after:transition-opacity duration-300"
-                        :class="{ 'text-grey-600/30': !item.active, 'after:opacity-100 text-white': item.active }"
+                        :class="{ 'text-gray-400/50': !item.active, 'after:opacity-100 text-white': item.active }"
                     />
                 </div>
-                <div class="md:hidden">
+                <div class="flex items-center space-x-3 md:hidden">
                     <button class="text-white p-2.5 bg-blue-500/10 rounded-xl">
                         <MagnifyingGlassIcon class="w-4 h-4" />
+                    </button>
+                    <Link>
+                        <img src="https://www.gravatar.com/avatar/c8b47d3bd947380bba793fc8ccb15395?s=100&d=https%3A%2F%2Fs3.amazonaws.com%2Flaracasts%2Fimages%2Fforum%2Favatars%2Fdefault-avatar-10.png" class="w-7 h-7 rounded-full" />
+                    </Link>
+                    <button>
+                        <Bars3Icon class="w-7 h-7" />
                     </button>
                 </div>
                 <div class="hidden md:flex items-center">
