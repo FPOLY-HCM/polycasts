@@ -1,14 +1,19 @@
 /** @type {DefaultColors} */
-const colors = require("tailwindcss/colors");
+const colors = require('tailwindcss/colors');
 
 module.exports = {
     content: [
-        "./resources/**/*.blade.php",
-        "./resources/**/*.js",
-        "./resources/**/*.vue",
+        './resources/**/*.blade.php',
+        './resources/**/*.js',
+        './resources/**/*.vue',
     ],
     theme: {
         extend: {
+            colors: {
+                grey: {
+                    600: '#bad9fc',
+                }
+            },
             backgroundSize: {
                 'auto': 'auto',
                 'cover': 'cover',

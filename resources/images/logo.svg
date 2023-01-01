@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="157" height="18" viewBox="0 0 157 18" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <defs>
+    <style bx:fonts="Open Sans">@import url(https://fonts.googleapis.com/css2?family=Open+Sans%3Aital%2Cwght%400%2C300%3B0%2C400%3B0%2C500%3B0%2C600%3B0%2C700%3B0%2C800%3B1%2C300%3B1%2C400%3B1%2C500%3B1%2C600%3B1%2C700%3B1%2C800&amp;display=swap);</style>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <g fill="#4A4A4A" fill-rule="nonzero">
+      <path d="M94.06 4.688l2.4 2.401a1.266 1.266 0 1 1-1.79 1.79l-2.401-2.4a1.266 1.266 0 1 1 1.79-1.79zM99.191 9.82l5.143 5.143a1.266 1.266 0 1 1-1.79 1.79L97.4 11.612a1.266 1.266 0 1 1 1.79-1.79z" style="fill: rgb(255, 255, 255);"/>
+      <path d="M92.843 4.363l13.816-3.59a1.303 1.303 0 0 1 1.583.915 1.264 1.264 0 0 1-.9 1.56L93.525 6.836a1.303 1.303 0 0 1-1.583-.914 1.264 1.264 0 0 1 .9-1.56z" style="fill: rgb(255, 255, 255);"/>
+      <path d="M102.193 15.504l3.59-13.816a1.264 1.264 0 0 1 1.559-.9c.686.189 1.093.894.914 1.582l-3.59 13.817a1.264 1.264 0 0 1-1.56.9 1.303 1.303 0 0 1-.913-1.583z" style="fill: rgb(255, 255, 255);"/>
+    </g>
+    <path fill="#53B5FF" d="M101.718 9.147l-4.99 4.991a1.289 1.289 0 0 1-1.822-1.822l4.99-4.991a1.289 1.289 0 1 1 1.822 1.822zM94.288 16.578l-.75.75a1.289 1.289 0 0 1-1.822-1.822l.75-.75a1.289 1.289 0 1 1 1.822 1.822z"/>
+    <text style="fill: rgb(246, 246, 246); font-family: &quot;Open Sans&quot;; font-size: 22px; font-weight: 700; letter-spacing: 4.3px; white-space: pre;" x="-1.439" y="16.814">POLYC  STS</text>
+  </g>
+</svg>

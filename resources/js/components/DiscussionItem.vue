@@ -10,19 +10,19 @@ defineProps({
 
 <template>
     <Link class="flex flex-col bg-[rgb(24,39,63)] hover:bg-[rgb(25,48,78)] bg-opacity-70 text-white px-5 py-4 mb-3 rounded-2xl">
-        <div class="flex items-center mr-5 mb-4">
+        <div class="flex items-center mb-4 mr-5">
             <div class="flex items-center">
                 <img
                     :src="discussion.user.avatar"
                     :alt="discussion.user.username"
-                    class="rounded-xl w-14 h-14 mr-3"
+                    class="mr-3 rounded-xl w-14 h-14"
                 />
                 <strong class="text-xs uppercase">{{ discussion.user.username }}</strong>
             </div>
             <div class="ml-auto">
                 <div class="flex items-center">
-                    <EyeIcon class="h-5 w-5 text-gray-400" />
-                    <span class="text-gray-400 text-xs ml-1">{{ discussion.replies_count }}</span>
+                    <EyeIcon class="w-5 h-5 text-gray-400" />
+                    <span class="ml-1 text-xs text-gray-400">{{ discussion.replies_count }}</span>
                 </div>
             </div>
         </div>

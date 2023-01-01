@@ -14,11 +14,11 @@ const menu = [
 
 <template>
     <header>
-        <nav class="px-5 md:px-10 py-3 h-14">
+        <nav class="px-5 py-3 md:px-10 h-14">
             <div class="flex items-center justify-between h-full">
                 <div>
                     <Link :href="route('home')">
-                        <img src="https://laracasts.com/images/logo/logo-white.svg" width="145">
+                        <img src="@/../images/logo.svg" width="145">
                     </Link>
                 </div>
                 <div class="hidden md:block">
@@ -36,13 +36,13 @@ const menu = [
                         <MagnifyingGlassIcon class="w-4 h-4" />
                     </button>
                     <Link>
-                        <img src="https://www.gravatar.com/avatar/c8b47d3bd947380bba793fc8ccb15395?s=100&d=https%3A%2F%2Fs3.amazonaws.com%2Flaracasts%2Fimages%2Fforum%2Favatars%2Fdefault-avatar-10.png" class="w-7 h-7 rounded-full" />
+                        <img src="https://www.gravatar.com/avatar/c8b47d3bd947380bba793fc8ccb15395?s=100&d=https%3A%2F%2Fs3.amazonaws.com%2Flaracasts%2Fimages%2Fforum%2Favatars%2Fdefault-avatar-10.png" class="rounded-full w-7 h-7" />
                     </Link>
                     <button>
                         <Bars3Icon class="w-7 h-7" />
                     </button>
                 </div>
-                <div class="hidden md:flex items-center">
+                <div class="items-center hidden md:flex">
                     <div>
                         <button class="bg-blue-500/10 p-2.5 text-white rounded-xl transition-all hover:bg-blue-500/20 hover:text-blue-500">
                             <MagnifyingGlassIcon class="w-4 h-4" />
