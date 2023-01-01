@@ -19,3 +19,4 @@ yarn-error.log
 composer.lock
 package-lock.json
 lang/php_*.json
+resources/js/ziggy.js
