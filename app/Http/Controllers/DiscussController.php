@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use Inertia\Inertia;
 use App\Models\Channel;
 use App\Models\Discussion;
-use Inertia\Inertia;
 
 class DiscussController extends Controller
 {
